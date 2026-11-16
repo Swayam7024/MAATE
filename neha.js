@@ -1,9 +1,12 @@
 // about section 
 
-document.querySelector('.dropbtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent link default behavior
-    document.querySelector('.dropdown-content').classList.toggle('show');
-});
+const dropBtn = document.querySelector('.dropbtn');
+if (dropBtn) { // the dropdown only exists on index.html
+    dropBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent link default behavior
+        document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+}
 
 // Close the dropdown if clicked outside
 window.onclick = function(event) {
@@ -61,26 +64,3 @@ document.querySelectorAll('.slideshow-container').forEach(container => {
     const slideshowId = container.id;
     startAutoSlide(slideshowId);
 });
-
-
-//authore details 
-(function() {
-    const checkConsole = () => {
-        console.log("%c Swayam Khantwal", "color: green; font-size: 18px; font-weight: bold;");
-        console.log("%c Web Developement | Embedded Systems Developement", "color: green; font-size: 14px;");
-        console.log("%c Email: swayamkhantwal225@gmail.com", "color: green; font-size: 14px;");
-        console.log("%c Instagram: https://instagram.com/swayam_k.99", "color: green; font-size: 14px; text-decoration: underline;");
-    };
-
-    const keywords = ["author", "creator", "developer", "made_by", "madeby", "contact", "info", "social"];
-
-    keywords.forEach(word => {
-        Object.defineProperty(window, word, {
-            get: function() {
-                checkConsole();
-                return undefined; // No visible return message
-            }
-        });
-    });
-})();
-

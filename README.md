@@ -1,13 +1,23 @@
+<div align="center">
+
+<img src="assets/home%20assets/Untitled__2_-removebg-preview.png" alt="MAATE Learning Solutions logo" width="320">
+
 # MAATE Learning Solutions
 
-A responsive static website for MAATE Learning Solutions, a soft-skills, grooming and corporate training institute.
+**A responsive static website for a soft-skills, grooming and corporate training institute. Built for a real client and live in production.**
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![EmailJS](https://img.shields.io/badge/EmailJS-FF6C37?style=flat)
-![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat&logo=fontawesome&logoColor=white)
-![Client Project](https://img.shields.io/badge/Client_Project-Live-brightgreen)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![EmailJS](https://img.shields.io/badge/EmailJS-FF6C37?style=for-the-badge)
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
+![Client Project](https://img.shields.io/badge/Client_Project-Live-brightgreen?style=for-the-badge)
+
+[Features](#features) · [Tech Stack](#tech-stack) · [Getting Started](#getting-started) · [Project Structure](#project-structure)
+
+</div>
+
+---
 
 ## Overview
 
@@ -25,6 +35,7 @@ This is a static website I built for a client, MAATE Learning Solutions, and it 
 - **Contact page** (`contact_us.html`): enquiry form (name, phone, email, company, subject, question) that sends messages through [EmailJS](https://www.emailjs.com/) without a backend
 - Shared footer with quick links, contact details and a LinkedIn link
 - Separate stylesheets for each page
+- Meta descriptions and a favicon on every page, and session photos resized for faster loading
 
 ## Tech Stack
 
@@ -35,7 +46,6 @@ This is a static website I built for a client, MAATE Learning Solutions, and it 
 | Scripting | Vanilla JavaScript (slideshows, dropdown, flip cards) |
 | Icons | Font Awesome 5 (CDN) |
 | Contact form | EmailJS browser SDK (CDN) |
-| Alternative mail handler | `send_form_email.php` (PHP `mail()`; no page currently uses it) |
 
 ## Getting Started
 
@@ -72,7 +82,6 @@ MAATE/
 ├── contact_us.html         # Contact form (EmailJS)
 ├── neha.js                 # About Us dropdown and photo slideshows
 ├── testimonials.js         # Flip-card behaviour for the testimonials page
-├── send_form_email.php     # Alternative PHP mail handler (not used by the pages)
 ├── css/
 │   ├── neha.css            # Home page styles
 │   ├── services.css
@@ -85,10 +94,9 @@ MAATE/
 
 ## Future Improvements
 
-- Compress and resize the photos (many are 2 to 3.5 MB) and serve them in WebP format to speed up page loads
-- Add SEO metadata (meta descriptions, Open Graph tags) and give the testimonials page a proper title
-- Add `alt` text to all images and improve keyboard accessibility of the flip cards
-- Remove the unused PHP mail handler, or switch the form to use it
+- Serve the photos in WebP format with `srcset` for even faster page loads
+- Add Open Graph tags for nicer link previews on social media
+- Add descriptive `alt` text to all images and improve keyboard accessibility of the flip cards
 
 ## Author
 
